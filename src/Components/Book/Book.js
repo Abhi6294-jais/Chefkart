@@ -1,11 +1,11 @@
 import React from 'react'
 
-const OneTime = () => {
+const Book = () => {
   return (
     <div>
-      Onetime
+      Book
     </div>
   )
 }
 
-export default OneTime
+export default Book
