@@ -45,8 +45,8 @@ const settings = {
 
 const Slider4 = () => {
   return (
-    <section className="bg-gray-100 pb-12 pt-6">
-      <h2 className="text-5xl font-bold text-center mb-10">Gallery</h2>
+    <section className="bg-gray-100  pt-6 pb-10 md:pb-16 ">
+      <h2 className="text-5xl font-bold text-center m-10">Gallery</h2>
       <div className="w-[95%] mx-auto">
         <Slider {...settings}>
           {images.map((src, index) => (

@@ -34,7 +34,7 @@ const FaqSection = () => {
   return (
     <section className="bg-gray-50 py-16 px-4 sm:px-8 lg:px-24">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-5xl font-bold text-center text-orange-500 mb-12">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center text-orange-500 mb-12">
           Frequently Asked Questions
         </h2>
 
@@ -46,7 +46,7 @@ const FaqSection = () => {
             >
               <button
                 onClick={() => toggle(index)}
-                className="flex items-center justify-between w-full px-6 py-4 text-left text-3xl font-bold text-gray-800 focus:outline-none"
+                className="flex items-center justify-between w-full px-4 py-4 sm:px-6 text-left text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 focus:outline-none"
               >
                 {faq.question}
                 {openIndex === index ? (
@@ -56,7 +56,7 @@ const FaqSection = () => {
                 )}
               </button>
               <div
-                className={`px-6 pb-4 text-gray-600 text-2xl  transition-all duration-300 ${
+                className={`px-4 sm:px-6 pb-4 text-gray-600 text-base sm:text-xl lg:text-2xl transition-all duration-300 ${
                   openIndex === index ? "block" : "hidden"
                 }`}
               >

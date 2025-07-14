@@ -18,7 +18,7 @@ const TabSwitch = () => {
   const [active, setActive] = useState("family");
 
   return (
-   <section className="py-10 px-4">
+   <section className="md:py-10 px-4">
   {/* Header */}
   <h1 className="text-center text-2xl sm:text-4xl lg:text-5xl font-bold mb-6 mt-4 px-2">
     Healthy food cooked in your kitchen,

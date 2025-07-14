@@ -3,7 +3,7 @@
 const ShowKart1 = () => {
   return (
     <section className="text-gray-600 body-font bg-[#f1f2f5]">
-      <div className="container px-4 sm:px-6 py-12 sm:py-24 mx-auto">
+      <div className="container px-4 sm:px-6 py-6 md:py-12 sm:py-24 mx-auto">
         {/* Mobile: 2-column grid; Desktop: keep flex-wrap */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           

@@ -205,6 +205,7 @@ const Navbar = () => {
                 <hr className="border-gray-600" />
 
                 {/* Contact Button */}
+                <Link to="/contact">
                 <button
                   className="mt-4 inline-flex justify-center items-center bg-orange-500 hover:bg-orange-600 border-0 px-4 py-3 rounded text-white text-lg font-semibold transition-colors duration-200"
                   onClick={toggleMenu}
@@ -212,6 +213,7 @@ const Navbar = () => {
                   Contact Us
                   <FaChevronRight className="ml-2" />
                 </button>
+                </Link>
               </div>
             </div>
           </>

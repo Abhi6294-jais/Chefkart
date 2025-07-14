@@ -11,10 +11,19 @@ const Footer = () => {
         
       </Link>
       <p className="mt-2 text-black font-bold  text-center ">Get The App Now</p>
-   <div className="flex flex-row space-x-7 mt-5">
-    <img src="https://chefkart-strapi-media.s3.ap-south-1.amazonaws.com/app_store_e12d7f52d9.svg" alt="oljj" />
-    <img src="https://chefkart-strapi-media.s3.ap-south-1.amazonaws.com/google_play_bb87168764.svg" alt="ijj"/>   
-   </div>
+<div className="flex flex-row space-x-7 mt-5">
+  <img
+    src="https://storage.googleapis.com/chefkart-strapi-media/app_store_e12d7f52d9.svg"
+    alt="App Store"
+
+  />
+  <img
+    src="https://storage.googleapis.com/chefkart-strapi-media/google_play_bb87168764.svg"
+    alt="Google Play"
+  
+  />
+</div>
+
 
     </div>
     <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">

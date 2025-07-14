@@ -5,7 +5,7 @@ const Gallery = () => {
     <div className="py-16 bg-white">
       <h2 className="text-6xl font-bold text-center text-black mb-20">Gallery</h2>
 
-      <div className="overflow-x-auto overflow-y-hidden px-4  sm:px-6 lg:px-12 ml-10">
+      <div className="overflow-x-auto overflow-y-hidden px-4  sm:px-6 lg:px-12 ml-4 md:ml-10">
         <div className="flex gap-12 snap-x snap-mandatory w-max">
           
           {/* Video 1 */}

@@ -4,7 +4,7 @@ const Hearit5 = () => {
   return (
     <div>
       <section className="body-font bg-beig">
-        <h1 className="text-center text-gray-700 text-5xl font-bold mt-2 md:mt-10">Don’t Take Our Word For It!</h1>
+        <h1 className="text-center text-gray-700 text-3xl md:text-5xl font-bold mt-2 md:mt-10">Don’t Take Our Word For It!</h1>
         <div className="container px-5 py-18 md:py-24 mx-auto flex flex-wrap justify-center items-center">
           
           {/* Left side stats and text */}

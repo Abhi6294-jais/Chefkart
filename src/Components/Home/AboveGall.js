@@ -4,7 +4,7 @@ const AboveGall = () => {
   return (
     <div>
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
+        <div className="container px-5  md:py-20 mx-auto">
           {/* Image Row - stay in single row, original size */}
           <div className="flex flex-nowrap justify-evenly items-center gap-6 overflow-x-auto">
             {/* Image 1 */}

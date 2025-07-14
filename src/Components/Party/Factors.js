@@ -1,14 +1,14 @@
 const Factors = () => {
   return (
     <section className="text-gray-600 body-font bg-white ">
-      <div className="container px-5 py-40 mx-auto flex flex-col md:flex-row items-center justify-center gap-15">
+      <div className="container px-5 py-20 md:py-40 mx-auto flex flex-col md:flex-row items-center justify-center gap-15">
         {/* Left Text */}
         <div className="w-full md:w-2/5 text-center md:text-left">
           <h1 className="text-xl md:text-[3.4rem] font-bold text-black leading-tight">
             Our affordable prices <br />
             are based on <span className="text-orange-500">4 Factors</span>
           </h1>
-          <p className="text-4xl text-gray-800 mt-7">
+          <p className="text-4xl text-gray-800 mt-7 mb-3">
             Minimum prices guaranteed*
           </p>
         </div>

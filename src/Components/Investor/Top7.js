@@ -9,8 +9,8 @@ export default function Top7() {
         />
 
         {/* Bottom-left text overlay */}
-        <div className="absolute bottom-10 left-4 sm:left-10 md:left-20 text-white mb-0 md:mb-12">
-          <h1 className="text-[1.3rem] mt-2 sm:text-4xl md:text-5xl lg:text-5xl font-bold   max-w-[90%] sm:max-w-2xl">
+        <div className="absolute bottom-6 md:bottom-10 left-4 sm:left-10 md:left-20 text-white mb-0 md:mb-12">
+          <h1 className="text-[1.3rem] mt-2 sm:text-4xl md:text-5xl lg:text-5xl font-bold  max-w-[90%] sm:max-w-2xl">
             We are <span className="text-orange-500">category creators,</span>
          
             dedicated to <span className="text-orange-500">simplifying the</span>
@@ -22,4 +22,5 @@ export default function Top7() {
     </div>
   );
 }
+
 
