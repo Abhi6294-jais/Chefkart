@@ -81,3 +81,5 @@ useEffect(() => {
 };
 
 export default Slider7;
+
+

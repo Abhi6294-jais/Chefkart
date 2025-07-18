@@ -3,6 +3,8 @@ import { Suspense, lazy } from "react";
 import CookBanner from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Header/Navbar";
+import ChefDirectory from "./Components/ChefSearch";
+import ChefDetails from "./Components/ChefDetailPage";
 
 // Lazy loaded components
 const Home = lazy(() => import("./Components/Home/Home"));
@@ -16,7 +18,6 @@ const Testimonial = lazy(() => import("./Components/Testimonial/Testimonials"));
 const Career = lazy(() => import("./Components/Career/Career"));
 const Investor = lazy(() => import("./Components/Investor/Investor"));
 const Blog = lazy(() => import("./Components/Blog/Blog"));
-const ChefDirectory = lazy(() => import("./Components/ChefSearch"));
 
 const App = () => {
   const location = useLocation();
@@ -39,6 +40,7 @@ const App = () => {
           <Route path="/investor-relation" element={<Investor />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/chef-search" element={<ChefDirectory />} />
+          <Route path="/chef/:id" element={<ChefDetails />} /> 
         </Routes>
       </Suspense>
       <Footer />

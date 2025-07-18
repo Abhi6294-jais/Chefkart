@@ -1,44 +1,67 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
+
 const ChefDirectory = () => {
-  //handle the api calls and data fetching for the chef directory
-  //useState to manage the state of chefs and search filters
+  
+  const dummyChefs = [
+    {
+      _id: "1",
+      name: "Rohan Pal",
+      profilepic: "https://via.placeholder.com/64",
+      city: "Delhi",
+      area: "South Delhi",
+      Address: "GK-2, New Delhi",
+      starRating: 4.5,
+      totalRatings: 120,
+      phone: "9876543210",
+      experience: 5,
+    },
+    {
+      _id: "2",
+      name: "Priya Sharma",
+      profilepic: "https://via.placeholder.com/64",
+      city: "Mumbai",
+      area: "Andheri",
+      Address: "Lokhandwala, Andheri West",
+      starRating: 4.8,
+      totalRatings: 200,
+      phone: "9988776655",
+      experience: 8,
+    },
+    {
+      _id: "3",
+      name: "Amit Verma",
+      profilepic: "https://via.placeholder.com/64",
+      city: "Bangalore",
+      area: "Whitefield",
+      Address: "ITPL Road, Whitefield",
+      starRating: 4.2,
+      totalRatings: 90,
+      phone: "9123456780",
+      experience: 4,
+    },
+  ];
+
   const [chefs, setChefs] = useState([]);
-
-  //search  filter of chef
   const [search, setSearch] = useState("");
-  //useNavigate is used to navigate to different routes
-   const navigate = useNavigate();
-
   const [filters, setFilters] = useState({
     city: "",
     area: "",
     locality: "",
   });
 
+  const navigate = useNavigate();
+
   useEffect(() => {
-    const fetchChefs = async () => {
-      try {
-        const response = await axios.get("http://localhost:8000/chef/get");
-        if (response.data && response.data.data) {
-
-          setChefs(response.data.data);
-        }
-      } catch (error) {
-        console.error("Error fetching chefs:", error);
-      }
-    };
-
-    fetchChefs();
+    // Simulate API fetch
+    setChefs(dummyChefs);
   }, []);
-// filter the chefs based on the search input and selected filters
+
   const handleFilterChange = (e) => {
     const { name, value } = e.target;
     setFilters((prev) => ({ ...prev, [name]: value }));
   };
 
-  
   const filteredChefs = chefs.filter((chef) => {
     const matchesGlobalSearch =
       chef.name.toLowerCase().includes(search.toLowerCase()) ||
@@ -100,11 +123,11 @@ const ChefDirectory = () => {
           <div
             key={index}
             onClick={() => navigate(`/chef/${chef._id}`)}
-            className="bg-white p-4 rounded-lg shadow hover:shadow-lg transition"
+            className="bg-white p-4 rounded-lg shadow hover:shadow-lg transition cursor-pointer"
           >
             <div className="flex items-center space-x-4">
               <img
-                src={chef.profilepic || "https://via.placeholder.com/64"}
+                src={chef.profilepic}
                 alt={chef.name}
                 className="w-16 h-16 rounded-full object-cover"
               />
@@ -117,12 +140,10 @@ const ChefDirectory = () => {
             </div>
             <div className="mt-4">
               <p className="text-sm">
-                ⭐ {chef.starRating || "0"} ({chef.totalRatings || "0"} Ratings)
+                ⭐ {chef.starRating} ({chef.totalRatings} Ratings)
               </p>
               <p className="text-sm">📞 {chef.phone}</p>
-              <p className="text-sm">
-                Experience: {chef.experience || "N/A"}
-              </p>
+              <p className="text-sm">Experience: {chef.experience} years</p>
             </div>
           </div>
         ))}

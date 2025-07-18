@@ -65,11 +65,7 @@ const Navbar = () => {
             <Link to="/chef-search" className="mr-5 text-xl md:text-2xl text-white hover:text-orange-500 hover:underline">
               Cooks Near Me
             </Link>
-             <Link to="/register-chef">
-          <button className="text-white text-2xl  py-2 px-6 rounded-lg hover:text-orange-500 hover:underline">
-            Registration as the chef
-          </button>
-          </Link>
+            
           </nav>
           
           {/* Hamburger Menu Button - VISIBLE ON ALL SCREENS */}
